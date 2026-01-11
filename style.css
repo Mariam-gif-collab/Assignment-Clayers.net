@@ -1,0 +1,7 @@
+:root{
+    --basic-color:#f8b864;
+    
+}
+.top-header ,nav button{
+background-color: #f8b864 !important;
+}

@@ -1,7 +1,71 @@
 :root{
     --basic-color:#f8b864;
-    
+    --basic-grey:#f2f2f2;
+}
+body{
+    overflow-x: hidden;
 }
 .top-header ,nav button{
 background-color: #f8b864 !important;
 }
+.navbar li:hover {color: var(--basic-color) !important;}
+.btn{
+    background-color: var(--basic-color) ;
+    border:0 !important;
+}
+.carousel-caption{
+    bottom:40% !important;
+}
+.promo-section{
+    margin:-80px ;
+    min-height:360px !important;
+
+}
+.promo-content{
+    padding:40px 30px;
+    border-right: 1px dashed #ddd;
+ gap:0 !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;
+}
+.causes-section{
+    margin-top:150px !important;
+    background-color: var(--basic-grey);
+}
+.section-heading .heading-border {
+    border-top: 5px solid #f8b864;
+    width: 50px;
+    display: inline-block;
+    margin-top: 0;
+}
+.card .btn {
+    height: 40px !important;
+    width: 100px !important;
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    background-color: rgba(248, 184, 100, 0.642) !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    font-family: "Jost", sans-serif !important;
+    font-weight: 500 !important;
+    padding: 5px 10px !important;
+    border-radius: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    z-index: 100 !important;
+}
+.card{
+    border: 1px dashed gray;
+}
+.progress-bar{
+    background-color: var(--basic-color);
+}
+.card-link{
+    color:gray;
+    text-decoration: none;
+}
+@media  (max-width: 870px) {
+    .promo-section {
+        margin-top: 0;
+        padding: 60px 0;
+    }}

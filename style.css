@@ -1,43 +1,58 @@
-:root{
-    --basic-color:#f8b864;
-    --basic-grey:#f2f2f2;
+:root {
+    --basic-color: #f8b864;
+    --basic-grey: #f2f2f2;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
-.top-header ,nav button{
-background-color: #f8b864 !important;
+
+.top-header,
+nav button {
+    background-color: #f8b864 !important;
 }
-.navbar li:hover {color: var(--basic-color) !important;}
-.btn{
-    background-color: var(--basic-color) ;
-    border:0 !important;
+
+.navbar li:hover {
+    color: var(--basic-color) !important;
 }
-.carousel-caption{
-    bottom:40% !important;
+
+.btn {
+    background-color: var(--basic-color);
+    border: 0 !important;
 }
-.promo-section{
-    margin:-80px ;
-    min-height:360px !important;
+
+.carousel-caption {
+    bottom: 40% !important;
+}
+
+.promo-section {
+    margin: -80px;
+    min-height: 400px !important;
 
 }
-.promo-content{
-    padding:40px 30px;
+
+.promo-content {
+    padding: 40px 30px;
     border-right: 1px dashed #ddd;
- gap:0 !important;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;
+    gap: 0 !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;
 }
-.causes-section{
-    margin-top:150px !important;
+
+.causes-section {
+    margin-top: 150px !important;
     background-color: var(--basic-grey);
+    min-height: 130vh !important;
+
 }
+
 .section-heading .heading-border {
     border-top: 5px solid #f8b864;
     width: 50px;
     display: inline-block;
     margin-top: 0;
 }
-.card .btn {
+
+.donate-btn {
     height: 40px !important;
     width: 100px !important;
     position: absolute !important;
@@ -54,18 +69,104 @@ background-color: #f8b864 !important;
     align-items: center !important;
     z-index: 100 !important;
 }
-.card{
+
+.card {
     border: 1px dashed gray;
 }
-.progress-bar{
+
+.progress-bar {
     background-color: var(--basic-color);
 }
-.card-link{
-    color:gray;
+
+.card-link {
+    color: gray;
     text-decoration: none;
 }
-@media  (max-width: 870px) {
+
+.graph {
+    color: var(--basic-color);
+}
+.profile-wrap{
+    border:1px dashed gray !important;
+}
+
+.profile {
+    height: 120px !important;
+    width:
+        120px !important;
+    border-radius: 50% !important;
+    margin-bottom: 30px !important;
+}
+.about-section{
+    /* position: absolute !important; */
+    margin-bottom: 40px !important;
+    min-height: 140vh !important;
+}
+
+.circle {
+clip-path: circle(50% at 50% 50%) !important;
+    background-color: #f8b864 !important;
+    height: 443px !important;
+    width: 459px !important;
+    position:absolute !important;
+    top: -196px !important;
+    left: -172px !important;
+    opacity: 0.4 !important;
+    z-index: -1 !important;
+}
+
+.watermelon {
+  clip-path: ellipse(30% 48% at 51% 50%) !important;
+    background-color: #f8b864 !important;
+   width: 118%;
+    height: 599px;  
+    position: absolute !important;
+    top: 255px;
+    right: -627px;
+    opacity: 0.4 !important;
+    z-index: -1 !important;
+    rotate: 182deg !important;
+}
+.about-section .card .btn {
+     height: 40px !important;
+    width: 100px !important;
+    background-color: rgba(248, 184, 100, 0.842) !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    font-family: "Jost", sans-serif !important;
+    font-weight: 500 !important;
+    padding: 5px 10px !important;
+    border-radius: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    z-index: 100 !important;
+
+}
+.campaigns{
+    background-image: url(./images/featured-bg.jpg) !important;
+    /* position:absolute !important; */
+    height: 700px !important;
+    width: 100%;
+        background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center !important;
+    -webkit-background-size: cover;
+    background-size: cover !important;
+    
+}
+.img-camp img{
+    height: 350px !important;
+    width: 440px !important;
+
+}
+
+
+@media (max-width: 870px) {
     .promo-section {
-        margin-top: 0;
-        padding: 60px 0;
-    }}
+        position: inherit;
+        margin-top: 0 !important;
+        padding: 60px 0 !important;
+        display: block !important;
+        height: auto !important;
+    }
+}

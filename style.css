@@ -11,6 +11,10 @@ body {
 nav button {
     background-color: #f8b864 !important;
 }
+.nac-stick{
+    position: fixed !important;
+    top: 0 !important;
+}
 
 .navbar li:hover {
     color: var(--basic-color) !important;
@@ -86,8 +90,9 @@ nav button {
 .graph {
     color: var(--basic-color);
 }
-.profile-wrap{
-    border:1px dashed gray !important;
+
+.profile-wrap {
+    border: 1px dashed gray !important;
 }
 
 .profile {
@@ -97,29 +102,55 @@ nav button {
     border-radius: 50% !important;
     margin-bottom: 30px !important;
 }
-.about-section{
+
+.about-section {
     /* position: absolute !important; */
     margin-bottom: 40px !important;
     min-height: 140vh !important;
 }
 
 .circle {
-clip-path: circle(50% at 50% 50%) !important;
+    clip-path: circle(50% at 50% 50%) !important;
     background-color: #f8b864 !important;
     height: 443px !important;
     width: 459px !important;
-    position:absolute !important;
+    position: absolute !important;
     top: -196px !important;
     left: -172px !important;
     opacity: 0.4 !important;
     z-index: -1 !important;
 }
+.circle::before {
+    background-color: rgb(248, 184, 100);
+    content: "";
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    top: -400px;
+    left: -350px;
+    opacity: 0.2;
+    z-index: -1;
+    border-radius: 100%;
+}
+.watermelon::after {
+    background-color: rgb(248, 184, 100);
+    content: "";
+    width: 50%;
+    height: 680px;
+    position: absolute;
+    top: 330px;
+    right: -150px;
+    transform: skew(5deg, 10deg);
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 100%;
+}
 
 .watermelon {
-  clip-path: ellipse(30% 48% at 51% 50%) !important;
+    clip-path: ellipse(30% 48% at 51% 50%) !important;
     background-color: #f8b864 !important;
-   width: 118%;
-    height: 599px;  
+    width: 118%;
+    height: 599px;
     position: absolute !important;
     top: 255px;
     right: -627px;
@@ -127,8 +158,9 @@ clip-path: circle(50% at 50% 50%) !important;
     z-index: -1 !important;
     rotate: 182deg !important;
 }
+
 .about-section .card .btn {
-     height: 40px !important;
+    height: 40px !important;
     width: 100px !important;
     background-color: rgba(248, 184, 100, 0.842) !important;
     color: #fff !important;
@@ -142,22 +174,117 @@ clip-path: circle(50% at 50% 50%) !important;
     z-index: 100 !important;
 
 }
-.campaigns{
+
+.campaigns {
     background-image: url(./images/featured-bg.jpg) !important;
     /* position:absolute !important; */
     height: 700px !important;
     width: 100%;
-        background-repeat: no-repeat !important;
+    background-repeat: no-repeat !important;
     background-attachment: scroll !important;
     background-position: center !important;
     -webkit-background-size: cover;
     background-size: cover !important;
-    
+
 }
-.img-camp img{
+
+.img-camp img {
     height: 350px !important;
     width: 440px !important;
 
+}
+
+.team-details img {
+    height: 200px !important;
+    width: 200px !important;
+    margin: 15px !important;
+    position: relative;
+}
+
+.team-details .hover {
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    padding: 70px 0px 15px;
+    transition: 0.3s linear;
+}
+
+.team-details:hover .hover {
+    visibility: visible;
+    opacity: 3;
+
+}
+
+a,
+a:hover,
+img,
+button {
+    transition: 0.5s
+}
+
+transitions style {
+    opacity: 0.72;
+    visibility: visible;
+}
+
+.team-details:hover img {
+    transform: scale(1.1);
+}
+
+.check-list li {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.check-list li i {
+    color: var(--basic-color);
+    margin-right: 25px;
+}
+
+.page-header {
+    background-image: url(./images/page-header-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    /* -webkit-background-size: cover; */
+    background-size: cover;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #6c757d;
+    content: "/";
+}
+.counter-section{
+    background-image: url(./images/counters-bg.jpg);
+        background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0px;
+    margin-top: 50px !important;
+}
+.card-body{justify-content: center !important;
+}
+.counter-section .card i {
+    color: white !important;
+    font-size: 50px;
+    align-self: center;
+    font-weight: 400 !important;
+    padding: 10px !important;
+}
+.counter{
+    color: var(--basic-color);
+   font-size: 60px;
 }
 
 
